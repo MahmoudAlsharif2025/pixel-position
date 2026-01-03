@@ -67,3 +67,15 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 # pixel-position
 # pixel-position
 "# pixel-position" 
+
+
+# php artisan serve
+# npm run dev
+
+## Assignment Submission
+
+This project is a Laravel application dockerized using Docker.
+
+### Screenshots
+All required screenshots are available in:
+docs/screenshots
