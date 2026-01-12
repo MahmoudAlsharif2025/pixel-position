@@ -1,81 +1,81 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Pixel Position – Docker & GitHub Assignment
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## Student Information
+- Name: Mahmoud Alsharif
+- Project Name: Pixel Position
+- Course: Operating Systems Lab
+- Assignment: Docker & GitHub Basics
 
-## About Laravel
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Project Description
+**Pixel Position** is a Laravel-based web application.  
+This project was developed as part of the Operating Systems Lab assignment to demonstrate the practical use of **GitHub for version control** and **Docker for containerizing and running a web application**.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+The application was successfully built and executed inside a Docker container using **GitHub Codespaces**.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+---
 
-## Learning Laravel
+## Technologies Used
+- PHP (Laravel)
+- Apache Web Server
+- Docker
+- Git & GitHub
+- GitHub Codespaces
+- Visual Studio Code (VS Code)
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+---
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## How to Run the Project Using Docker
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### Step 1: Verify Git and Docker Installation
+Before starting the deployment process, Git and Docker were verified using the following commands:
 
-## Laravel Sponsors
+git --version
+docker --version
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-# pixel-position
-# pixel-position
-"# pixel-position" 
+Step 2: Clone the Repository
+The project repository was cloned from GitHub using:
 
 
-# php artisan serve
-# npm run dev
+git clone https://github.com/MahmoudAlsharif2025/pixel-position.git
+cd pixel-position
 
-## Assignment Submission
+Step 3: Dockerfile
+A Dockerfile was created to configure the PHP and Apache environment and prepare the Laravel application to run inside a Docker container.
 
-This project is a Laravel application dockerized using Docker.
+Step 4: Build Docker Image
+After creating the Dockerfile, the Docker image was built using:
 
-### Screenshots
-All required screenshots are available in:
-docs/screenshots
+docker build -t pixel-position .
+
+
+Step 5: Run Docker Container
+The Docker container was started using the following command:
+
+docker run -d -p 8080:80 --name pixel-position pixel-position
+To verify that the container is running:
+
+
+docker ps
+Application Running Successfully
+After running the container, the application was accessed through the browser and worked correctly.
+The Pixel Position web interface appeared successfully, confirming that the application is running inside Docker.
+
+All required screenshots for the assignment are available in:
+
+
+docs/screenshots/
+Production URL
+When running the project using GitHub Codespaces, the application can be accessed using a forwarded port URL generated automatically by Codespaces, for example:
+
+
+https://zany-bassoon-pj6rgvpqqvvgf6p7j-8080.app.github.dev
+Note:
+The production URL is generated automatically by GitHub Codespaces and may change or become unavailable after stopping or restarting the Codespace.
+This behavior is expected and does not indicate an issue with the Docker configuration or the project setup.
+
+GitHub Repository Link
+The full source code of the project is available at:
+
+https://github.com/MahmoudAlsharif2025/pixel-position
